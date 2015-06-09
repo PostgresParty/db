@@ -39,6 +39,9 @@ University of California, University of Oslo, University of Sydney and many more
 The full list of PostgreSQL users you can find at 
 [PostgreSQL Users](http://www.postgresql.org/about/users/)
 
+#####Another why: 
+PostgreSQL - It is slowly emerging again. It is a champion of data integrity and has been trusted for a very long time. People got away from it when they found MySQL to be faster. However, it really isn't much slower. MySQL is more of "plug and play" for configuration. If you want Postgre to run fast, you have to set it up correctly. Don't worry though, a developer environment shouldn't need the complicated configs. I really favor Postgre for a standard database (tables). It's got some awesome new data types! JSON was mentioned below, it has the best number support, data integrity, CPU allocation, and MUCH more. Just Google it. Don't be put off that SQL helpers and such in NodeJS don't have support for it! It uses mostly standard SQL commands, so any app that sends SQL to MySQL should be able to use it. The main differences are in the connection, database groups, users/groups, and permissions.
+
 
 ### SQL (Syntax QL)
 
@@ -112,7 +115,7 @@ Useful commands when in interactive terminal:
 The \i command here reads in commands from the specified file.
 
 
-###Info...
+###Now lets get creating and reading...
 
 You can enter this into psql with the line breaks. psql will recognize that the command is not terminated until the semicolon.
 
@@ -120,3 +123,7 @@ White space (i.e., spaces, tabs, and newlines) can be used freely in SQL command
 
 varchar(80) specifies a data type that can store arbitrary character strings up to 80 characters in length. int is the normal integer type. real is a type for storing single precision floating-point numbers. date should be self-explanatory. (Yes, the column of type date is also named date. This might be convenient or confusing — you choose.)
 PostgreSQL supports the standard SQL types int, smallint, real, double precision, char(N), varchar(N), date, time, timestamp, and interval, as well as other types of general utility and a rich set of geometric types. PostgreSQL can be customized with an arbitrary number of user-defined data types. Consequently, type names are not key words in the syntax, except where required to support special cases in the SQL standard.
+
+Carry on reading the basic commands from the documentation here:
+
+http://www.postgresql.org/docs/9.4/static/tutorial-concepts.html
