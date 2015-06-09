@@ -4,7 +4,7 @@
   "description": "A wild journey into the world of databases",
   "main": "script.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "~4.9.x"
