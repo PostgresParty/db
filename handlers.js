@@ -29,20 +29,17 @@ handlers['POST /addName'] = function(req, res) {
     if(err) {
       return console.error('error fetching client from pool', err);
     }
-    client.query('SELECT name FROM people', function(err, result){
-      console.log(result);
+    client.query('INSERT INTO people (name, data) VALUES (' + arr[0] + ', ' + arr[1] + ')', function(err, result) {
+      // call `done()` to release the client back to the pool
+      console.log("working query");
+      done();
+
+      if(err) {
+        return console.error('error running query', err);
+      }
+      console.log(result.rows[0].number);
+      //output: 1
     });
-    //client.query('INSERT INTO people (name, data) VALUES (' + arr[0] + ', ' + arr[1] + ');', function(err, result) {
-      //call `done()` to release the client back to the pool
-    //   console.log("working query");
-    //   done();
-    //
-    //   if(err) {
-    //     return console.error('error running query', err);
-    //   }
-    //   console.log(result.rows[0].number);
-    //   //output: 1
-    // });
   });
 
   req.on('end', function() {
