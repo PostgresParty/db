@@ -16,7 +16,7 @@ function serverHandler (req, res){
   if (req.url.length === 1) {
     res.writeHead(200, {"Content-Type": "text/html"});
     res.end(index.toString());
-    console.log(process.env.DATABASE_URL);
+    console.log("db url", process.env.DATABASE_URL);
   }
 
   else {
