@@ -29,7 +29,7 @@ handlers['POST /addName'] = function(req, res) {
     if(err) {
       return console.error('error fetching client from pool', err);
     }
-    client.query('INSERT INTO people (name, data) VALUES (' + arr[0] + ', ' + arr[1] + ')', function(err, result) {
+    client.query('INSERT INTO people VALUES ("ronan", "butler");', function(err, result) {
       // call `done()` to release the client back to the pool
       console.log("working query");
       done();
