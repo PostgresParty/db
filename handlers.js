@@ -11,15 +11,9 @@ handlers.query = function(text, values, cb) {
       cb(err, result);
     });
   });
-  //   var pg = require('pg');
-  // var conString = process.env.DATABASE_URL ||
-  //   "postgres://urbncabzccybtf:hX4a2tRWls9vMsUSG2H7R1t9HM@ec2-54-228-180-92.eu-west-1.compute.amazonaws.com:5432/dcu0qd0vuko1ct";
-  // var client = new pg.Client(conString);
-  // client.connect();
-  // res.end(conString);
 };
 
-handlers['POST /addName'] = function(req, res) {
+handlers['POST /addData'] = function(req, res) {
   var arr;
   req.on('data', function(chunk) {
     arr = JSON.parse(chunk);
@@ -29,30 +23,21 @@ handlers['POST /addName'] = function(req, res) {
     if(err) {
       return console.error('error fetching client from pool', err);
     }
-    client.query('INSERT into people (name, data) VALUES($1, $2)', arr, function(err, result) {
+    client.query('INSERT into people (name, age, job, color) VALUES($1, $2, $3, $4)', arr, function(err, result) {
       // call `done()` to release the client back to the pool
-      console.log("working query");
       done();
 
       if(err) {
         return console.error('error running query', err);
       }
-      console.log(result.rows);
+      // console.log(result.rows);
       //output: 1
     });
   });
 
   req.on('end', function() {
-    res.end(JSON.stringify(arr[1]));
+    res.end(JSON.stringify(arr));
   });
-  // var query = client.query("insert into employee (firstName,lastName,email,mobile) "+
-  //                         "values ('"+req.query.fName+"','"+req.query.lName+"','"+
-  //                             req.query.email+"','"+req.query.mbl+"')");
-  // query.on("end", function (result) {
-  //     client.end();
-  //     res.write('Success');
-  //     res.end();
-  // });
 };
 
 handlers.generic = function(req, res) {
