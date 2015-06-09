@@ -39,6 +39,9 @@ BASF - The worlds largest chemical company, uses PostgreSQL to store the data fo
 
 And many more ...
 
+#####Another why: 
+PostgreSQL - It is slowly emerging again. It is a champion of data integrity and has been trusted for a very long time. People got away from it when they found MySQL to be faster. However, it really isn't much slower. MySQL is more of "plug and play" for configuration. If you want Postgre to run fast, you have to set it up correctly. Don't worry though, a developer environment shouldn't need the complicated configs. I really favor Postgre for a standard database (tables). It's got some awesome new data types! JSON was mentioned below, it has the best number support, data integrity, CPU allocation, and MUCH more. Just Google it. Don't be put off that SQL helpers and such in NodeJS don't have support for it! It uses mostly standard SQL commands, so any app that sends SQL to MySQL should be able to use it. The main differences are in the connection, database groups, users/groups, and permissions.
+
 
 ### SQL (Syntax QL)
 
