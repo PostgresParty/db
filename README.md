@@ -112,7 +112,7 @@ Useful commands when in interactive terminal:
 The \i command here reads in commands from the specified file.
 
 
-###Info...
+###Now lets get creating and reading...
 
 You can enter this into psql with the line breaks. psql will recognize that the command is not terminated until the semicolon.
 
@@ -120,3 +120,7 @@ White space (i.e., spaces, tabs, and newlines) can be used freely in SQL command
 
 varchar(80) specifies a data type that can store arbitrary character strings up to 80 characters in length. int is the normal integer type. real is a type for storing single precision floating-point numbers. date should be self-explanatory. (Yes, the column of type date is also named date. This might be convenient or confusing — you choose.)
 PostgreSQL supports the standard SQL types int, smallint, real, double precision, char(N), varchar(N), date, time, timestamp, and interval, as well as other types of general utility and a rich set of geometric types. PostgreSQL can be customized with an arbitrary number of user-defined data types. Consequently, type names are not key words in the syntax, except where required to support special cases in the SQL standard.
+
+Carry on reading the basic commands from the documentation here:
+
+http://www.postgresql.org/docs/9.4/static/tutorial-concepts.html
