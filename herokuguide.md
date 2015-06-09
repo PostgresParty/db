@@ -13,8 +13,8 @@
 Refer to 'handlers.js' for working database insert code.
 
 ### Resources:
-http://www.jitendrazaa.com/blog/webtech/how-to-use-postgresql-in-nodejs/
-https://addons.heroku.com/heroku-postgresql
-https://github.com/brianc/node-postgres/wiki/Example
-http://stackoverflow.com/questions/8484404/what-is-the-proper-way-to-use-the-node-js-postgresql-module
-https://github.com/brianc/node-postgres
++ http://www.jitendrazaa.com/blog/webtech/how-to-use-postgresql-in-nodejs/
++ https://addons.heroku.com/heroku-postgresql
++ https://github.com/brianc/node-postgres/wiki/Example
++ http://stackoverflow.com/questions/8484404/what-is-the-proper-way-to-use-the-node-js-postgresql-module
++ https://github.com/brianc/node-postgres
