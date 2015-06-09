@@ -37,7 +37,7 @@ handlers['POST /addName'] = function(req, res) {
       if(err) {
         return console.error('error running query', err);
       }
-      console.log(result.rows[0].number);
+      console.log(result.rows[0].name);
       //output: 1
     });
   });
