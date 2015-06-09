@@ -77,7 +77,7 @@ Note: Max 63 characters.. and can't use the same name twice.
 
 `dropdb yourdb`
 
-deletes your database, haha!
+deletes your database, haha! Don't ever delete the postgres database found on your computer as is the database which enables you to show your databases.
 
 `psql -U username -l`
 
