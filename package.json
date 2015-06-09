@@ -1,0 +1,25 @@
+{
+  "name": "Postgres Party",
+  "version": "0.1.3",
+  "description": "A wild journey into the world of databases",
+  "main": "script.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PostgresParty/db"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
