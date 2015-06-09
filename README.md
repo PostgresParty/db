@@ -12,16 +12,13 @@ PostgreSQL is a reliable and stable software. It is extremely common for compani
 
 The source code is available to all at no charge. If you have a need to customise or extend PostgreSQL in any way then you are able to do so with a minimum of effort, and with no attached costs.
 
-PostgreSQL is available for almost every brand of Unix (34 platforms with the latest stable release), and Windows compatibility is available via the Cygwin framework. Native Windows compatibility is also available with version 8.0 and above.
+PostgreSQL is cross-platform and runs on many operating systems including Linux, FreeBSD, Solaris, and Microsoft Windows. Mac OS X
 
 PostgreSQL has been designed and created to have much lower maintenance and tuning requirements than the leading proprietary databases, yet still retain all of the features, stability, and performance.
 
 There are many high-quality GUI Tools available for PostgreSQL from both open source developers and commercial providers.
 
 * What application areas is it suitable for?
-
-
-
 
 
 
@@ -37,7 +34,10 @@ Afilias - A global provider of domain name registry services. This Ireland-based
 
 BASF - The worlds largest chemical company, uses PostgreSQL to store the data for their U.S. Agribusiness E-Commerce website.
 
-And many more ...
+University of California, University of Oslo, University of Sydney and many more have been using PostgreSQL.
+
+The full list of PostgreSQL users you can find at 
+[PostgreSQL Users](http://www.postgresql.org/about/users/)
 
 
 ### SQL (Syntax QL)
