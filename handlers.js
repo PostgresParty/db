@@ -25,7 +25,7 @@ handlers['POST /addName'] = function(req, res) {
     arr = JSON.parse(chunk);
   });
 
-  pg.connect(conString, function(err, client) {
+  pg.connect(conString, function(err, client, done) {
     if(err) {
       return console.error('error fetching client from pool', err);
     }
